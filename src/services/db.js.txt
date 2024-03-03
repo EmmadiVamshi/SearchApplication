@@ -1,14 +1,6 @@
 // db.js
 const { Client } = require('pg');
 
-const client = new Client({
-  user: 'musun',          // Replace 'your_username' with your PostgreSQL username
-  host: 'localhost',              // Replace 'localhost' with your PostgreSQL host
-  database: 'customer_database', // Replace 'your_database_name' with your PostgreSQL database name
-  password: 'varun',      // Replace 'your_password' with your PostgreSQL password
-  port: 5432,                     // Replace 5432 with your PostgreSQL port if different
-});
-
 // Connect to the PostgreSQL database
 client.connect()
   .then(() => console.log('Connected to the database'))
